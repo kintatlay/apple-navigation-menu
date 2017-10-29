@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- character set -->
+  <meta charset="utf-8">
+
+  <!-- Creator of the website -->
+  <meta name="Author" content="Kin Tat Lay">
+
+  <!-- Description of the website -->
+  <meta name="description" content="Replicating the Apple website navigation bar">
+
+  <!-- Title -->
+  <title>Apple</title>
+
+  <!-- Icon -->
+  <link rel="shortcut icon" href="img/apple.ico">
+
+  <!-- Font Awesome - For icons -->
+  <script src="https://use.fontawesome.com/9a77ea3aef.js"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="side-menu" class="menuicon">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <a href="#" onclick="openSlideMenu()"</a>
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Mac</a>
+      <a href="#">iPad</a>
+      <a href="#">iPhone</a>
+      <a href="#">Watch</a>
+      <a href="#">TV</a>
+      <a href="#">Mysic</a>
+      <a href="#">Support</a>
+      <a href="#">Search apple.com</a>
+    </div>
+    <ul>
+      <li class="icon-file"><a href="https://www.apple.com"><i class="fa fa-apple" aria-hidden="true"></i>
+      </li>
+      <li class="active"><a href="#">Mac</a>
+      </li>
+      <li class="active"><a href="#">iPad</a>
+      </li>
+      <li class="active"><a href="#">iPhone</a>
+      </li>
+      <li class="active"><a href="#">Watch</a>
+      </li>
+      <li class="active"><a href="#">TV</a>
+      </li>
+      <li class="active"><a href="#">Music</a>
+      </li>
+      <li class="active"><a href="#">Support</a>
+      </li>
+      <li class="icon-file"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>
+      </li>
+      <li class="icon-file"><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+      </li>
+    </ul>
+    </nav>
+
+    <script>
+    function openSlideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('side-menu').style.marginLeft = '250px';
+    }
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+            document.getElementById('side-menu').style.marginLeft = '0';
+    }
+</script>
+</body>
+</html>

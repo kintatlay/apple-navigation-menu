@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+/*Navigation*/
+nav {
+  background-color: #262626;
+  overflow: hidden;
+  /*height: 45px;*/
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.icon-file i {
+  font-size: 22px;
+  color: #e6e6e6;
+  line-height: 45px;
+  vertical-align: middle;
+}
+
+.active a {
+  color: #e6e6e6;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 37px 0px 37px;
+}
+
+nav a:hover, i:hover {
+  color: #808080;
+}
+
+.menuicon {
+  width: 100%;
+  text-align: left;
+  color: #e6e6e6;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0.9;
+  z-index: 1;
+  display: none;
+  transition: 0.5s;
+}
+
+.menuicon a {
+  padding: 12px 12px 12px 30px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #e6e6e6;
+  transition: 0.3s;
+  display: block;
+}
+
+@media screen and (max-width: 780px){
+  nav ul {
+    max-height: 0px;
+
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+  }
+
+  .menuicon {
+    display: block;
+  }
+
+  .menuicon .btn-close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  margin-left: 50px;
+  }
+
+  .menuicon:checked ~ nav ul {
+    display: block;
+  }
+}
